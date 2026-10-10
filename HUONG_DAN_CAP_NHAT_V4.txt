@@ -1,0 +1,31 @@
+POTATO V4 - HUONG DAN CAP NHAT (WINDOWS 10/11)
+
+1) NHAN CTRL+C o cua so CMD dang chay POTATO V3.
+2) TAI FILE POTATO_Web_V4_Dem_Mic_Debate.zip VA GIAI NEN.
+3) MO THU MUC POTATO_Web MOI, NOI CO server.js.
+4) NEU MUON GIU GEMINI API: COPY FILE .env TU BAN CU VAO THU MUC MOI.
+5) NEU MUON GIU LICH SU: SAO LUU ROI COPY data/store.json TU BAN CU SANG data/store.json MOI.
+6) TRONG FILE EXPLORER, NHAN CTRL+L, GO cmd, NHAN ENTER.
+7) CHAY: node server.js
+8) MO: http://localhost:3000
+
+NEU BAO EADDRINUSE: ban cu van dang mo, dong cua so CMD cu bang CTRL+C.
+Neu khong dong duoc, chay:
+    set PORT=3001
+    node server.js
+Mo http://localhost:3001
+
+CHO GEMINI TREN RENDER:
+- Khong tai .env len GitHub.
+- Render > Environment > GEMINI_API_KEY = khoa cua ban; HOST = 0.0.0.0
+- Commit toan bo code V4 len GitHub (PHẢI co public/js/room-voice.js), deploy lai.
+- Micro yeu cau HTTPS (Render cung cap HTTPS).
+
+DEMO TINH NANG MOI:
+A. Noi & Suy nghi > chon 15 giay + 45 giay > Bat dau > chap nhan mic.
+   Doi 15 giay > 3-2-1 > dong ho noi va mic tu bat > Nhận góp ý.
+B. Phong tranh luan > Debate 3v3 > Tao phong > moi 5 nguoi nua.
+   Du 3 ung ho + 3 phan doi > Bat dau > nộp ý kiến > 6 luot theo phe.
+
+Luu y: Am thanh WebRTC STUN-only co the can TURN tren mot so mang.
+Day la ban demo, chua phu hop luu ho so ca nhan tai lieu nhay cam tren hosting cong khai.
